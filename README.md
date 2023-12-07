@@ -1,1 +1,3 @@
-# Projeto simples para testar ideias e projeto com PWA 
+# Projeto simples para testar ideias com foco em PWA 
+
+
