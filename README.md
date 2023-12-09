@@ -1,3 +1,3 @@
-# Projeto simples para testar ideias com foco em PWA 
+# Repo simples para testar ideias em PWA 
 
 
