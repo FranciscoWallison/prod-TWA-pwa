@@ -62,9 +62,31 @@ caso das Trusted Web Activities (TWA).
 `Confiabilidade:` Ajuda a evitar ataques de phishing e outros problemas de segurança,
 verificando que a entidade digital (aplicativo ou site) é de confiança.
 
-### Android
+# Android
 
+Criar um novo projeto no Android Studio
 
+Escolha `No Activity ` e next/proximo.
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/10142ca6-5b18-4996-97e3-eb3e4137a075)
+
+Aqui vai as configurações do projeto dar o finish/terminar.
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/d16fc190-d31f-4a22-9955-48e871727691)
+
+Vamos iniciar os aqruivos que são ´./app/build.gradle.kts´ e ´./app/src/main/AndroidManifest.xml´
+
+Primeor iremos alterar o ´./app/build.gradle.kts´
+
+A doc sobre a lib do [mais](https://github.com/GoogleChrome/android-browser-helper?tab=readme-ov-file#adding-android-browser-helper-to-an-android-project)
+
+```gradle
+dependencies {
+    //...
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.4.0'
+}
+
+``` 
 
 ### Passos para Configuração
 
@@ -97,3 +119,8 @@ hospede-o no seu servidor web na URL https://seu-pwa.com/.well-known/assetlinks.
 ````
 Use ferramentas como o "Google's Digital Asset Links API" para verificar se o arquivo está acessível e corretamente configurado.
 ````
+
+
+
+# Referencias:
+[Introduction to Trusted Web Activity for Android](https://medium.com/appcent/introduction-to-trusted-web-activity-for-android-3a6d822e62ff#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImMzYWJlNDEzYjIyNjhhZTk3NjQ1OGM4MmMxNTE3OTU0N2U5NzUyN2UiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDk3MjE1MTU2NTQ2NzEyMzIzNzkiLCJlbWFpbCI6ImZyYW5jaXNjb3dhbGxpc29uQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYmYiOjE3MTg4MDIzNjEsIm5hbWUiOiJmcmFuY2lzY28gd2FsbGlzb24iLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jSzhJQ1VLU1lPUU5aVVhhNWJVWldKUXd0NUp3a3RMNl9vV1lUZzkyNy15d3RNZ083bW89czk2LWMiLCJnaXZlbl9uYW1lIjoiZnJhbmNpc2NvIiwiZmFtaWx5X25hbWUiOiJ3YWxsaXNvbiIsImlhdCI6MTcxODgwMjY2MSwiZXhwIjoxNzE4ODA2MjYxLCJqdGkiOiIxNTNlYWU1YmE0NWUyOWJlZTEyZWMxN2IwOTE5YTExODU1YmM4YmM0In0.pmlc-Tr6pycyaBRxMYO7laTNBsBHGWRokXErgosyocTfNU9SEsDlc6RFWVbJXcj430LUVoWEUbYEuvLnBleYgLflGk5tTtBrritgxgVApQxX5o31EJXBLJzueQLP6G_KGJIFgkPDCTgE63miA7S8ZWp-ETkJ3EuN8ftGnlLbDUvUE3V7Py8Y1puz8yebC-4vyHedgPBZYrMiaf3DSIf7C0-9HiVYNijJItzjw-orN4W_KwSAdNrj9eJz1Y1axKC8qh-YRScpodRQvIJppcN8Ab2BiqEQSCsAbvmVq5JaWOmAdMgtaWSHd7CV3S0t4Xr196uHVEZyHac2LhnBa6nNvA)
