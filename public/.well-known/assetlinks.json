@@ -1,3 +1,4 @@
+<<<<<<< HEAD:public/.well-known/assetlinks.json
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
@@ -6,3 +7,17 @@
         "sha256_cert_fingerprints": ["SHA-256-Fingerprint"]
     }
 }]
+=======
+[
+    {
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.example.todofrontendce",
+            "sha256_cert_fingerprints": [
+                "AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90"
+            ]
+        }
+    }
+]
+>>>>>>> 40868179c912772db0c8ab8599102a5e3f1f08c8:.well-known/assetlinks.json
