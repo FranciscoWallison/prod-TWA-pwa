@@ -99,7 +99,12 @@ Nesse formato não gera nada de layout
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b8ab5be9-76ce-441a-a359-86625b177bc1)
 
 
-3 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
+3 - App link Assistant
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/68a9b179-393d-4539-9b75-47e31b470d87)
+
+
+4 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
 
 ```xml
             <intent-filter android:autoVerify="true">
@@ -116,7 +121,7 @@ Nesse formato não gera nada de layout
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/0539bf41-8101-4bf1-85c7-c7526e362d31)
 
 
-4 - Add na action as configurações 
+5 - Add na action as configurações 
 
 
 ```kotlin
