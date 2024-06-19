@@ -74,9 +74,9 @@ Aqui vai as configurações do projeto dar o finish/terminar.
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/d16fc190-d31f-4a22-9955-48e871727691)
 
-Vamos iniciar os aqruivos que são ´./app/build.gradle.kts´ e ´./app/src/main/AndroidManifest.xml´
+Vamos iniciar os aqruivos que são `./app/build.gradle.kts` e `./app/src/main/AndroidManifest.xml`
 
-Primeor iremos alterar o ´./app/build.gradle.kts´
+1 - Adicionar o `./app/build.gradle.kts`
 
 A doc sobre a lib do [mais](https://github.com/GoogleChrome/android-browser-helper?tab=readme-ov-file#adding-android-browser-helper-to-an-android-project)
 
@@ -87,6 +87,30 @@ dependencies {
 }
 
 ``` 
+
+2 - Adicionar o `./app/src/main/AndroidManifest.xml`
+
+```xml
+    <meta-data
+        android:name="default-url"
+        android:value="https://teste-twa-pwa.vercel.app" />
+
+
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+
+        <!-- Edit android:host to handle links to the target URL-->
+        <data
+            android:host="teste-twa-pwa.vercel.app"
+            android:scheme="https" />
+    </intent-filter>
+```
+
+
+
 
 ### Passos para Configuração
 
