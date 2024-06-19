@@ -62,6 +62,9 @@ caso das Trusted Web Activities (TWA).
 `Confiabilidade:` Ajuda a evitar ataques de phishing e outros problemas de segurança,
 verificando que a entidade digital (aplicativo ou site) é de confiança.
 
+### Android
+
+
 
 ### Passos para Configuração
 
@@ -72,6 +75,14 @@ Você pode obter a impressão digital SHA-256 do certificado de assinatura do
 seu aplicativo usando o comando keytool:
 
 keytool -list -v -keystore <path-to-keystore> -alias <key-alias> -storepass <store-password> -keypass <key-password>
+````
+
+````
+keytool -genkeypair -v -keystore chico-coin.keystore -alias chico-coin-alias -keyalg RSA -keysize 2048 -validity 10000
+
+
+keytool -list -v -keystore chico-coin.keystore -alias chico-coin-alias -storepass 123456789 -keypass 123456789
+
 ````
 
 2 - Criar e Hospedar o Arquivo assetlinks.json:
