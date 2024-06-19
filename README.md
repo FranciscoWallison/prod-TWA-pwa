@@ -99,25 +99,18 @@ Nesse formato não gera nada de layout
 
 
 
-2 - Adicionar o `./app/src/main/AndroidManifest.xml`
+3 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
 
 ```xml
-    <meta-data
-        android:name="default-url"
-        android:value="https://teste-twa-pwa.vercel.app" />
-
-
-    <intent-filter>
-        <action android:name="android.intent.action.VIEW" />
-
-        <category android:name="android.intent.category.DEFAULT" />
-        <category android:name="android.intent.category.BROWSABLE" />
-
-        <!-- Edit android:host to handle links to the target URL-->
-        <data
-            android:host="teste-twa-pwa.vercel.app"
-            android:scheme="https" />
-    </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+        
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+        
+                <data android:scheme="http" />
+                <data android:host="teste-twa-pwa.vercel.app" />
+            </intent-filter>
 ```
 
 
