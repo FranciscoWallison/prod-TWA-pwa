@@ -65,7 +65,6 @@ verificando que a entidade digital (aplicativo ou site) é de confiança.
 
 ### Passos para Configuração
 
-
 1 - Gerar a Impressão Digital SHA-256:
 
 ````

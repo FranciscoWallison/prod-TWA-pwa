@@ -1,47 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local Notifications</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO simples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Verificar se o navegador suporta notificações
-    if (!('Notification' in window)) {
-      console.log('Este navegador não suporta notificações.');
-      return;
-    }
-
-    // Solicitar permissão ao usuário para exibir notificações
-    Notification.requestPermission().then(function(permission) {
-      if (permission === 'granted') {
-        // Criar e exibir a notificação
-        showNotification();
-      } else {
-        console.warn('Permissão para notificações negada pelo usuário.');
-      }
-    });
-
-    function showNotification() {
-      // Configurações da notificação
-      const notificationOptions = {
-        body: 'Esta é uma notificação local!',
-        icon: 'path/to/icon.png' // Substitua pelo caminho real do ícone desejado
-      };
-
-      // Criar uma instância de notificação
-      const notification = new Notification('Título da Notificação', notificationOptions);
-
-      // Adicionar um evento de clique à notificação (opcional)
-      notification.addEventListener('click', function() {
-        console.log('Notificação clicada!');
-      });
-    }
-  });
-</script>
-
+    <h1>Hello, PWA!</h1>
+    <p>Olá mundo!</p>
+    <script src="./assets/app.js"></script>
 </body>
 </html>
