@@ -1,4 +1,4 @@
-# Repo simples para testar conceitos PWA 
+# Repo simples para testar conceitos PWA e TWA
 
 
 # Digital Asset Links
