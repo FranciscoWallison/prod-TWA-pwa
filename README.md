@@ -70,9 +70,10 @@ Escolha `No Activity ` e next/proximo.
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/10142ca6-5b18-4996-97e3-eb3e4137a075)
 
-Aqui vai as configurações do projeto dar o finish/terminar.
+Aqui vai as configurações do projeto dar o finish/terminar irei utilizar kotlin.
 
-![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/d16fc190-d31f-4a22-9955-48e871727691)
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/0e3aacc1-a3fe-431c-93e1-40c8648e4177)
+
 
 Vamos iniciar os aqruivos que são `./app/build.gradle.kts` e `./app/src/main/AndroidManifest.xml`
 
@@ -91,12 +92,11 @@ dependencies {
 
 2 - Adicionando uma nova `Activity` em `app/java/com.nome.seu-projeto`
 
-![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/fc520057-40da-4d19-a9b1-872e2139341a)
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/a424e3db-ffe1-44a0-a2b2-d2ae47c27b93)
 
 Nesse formato não gera nada de layout
 
-![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/64890a1e-5c5c-4351-b793-13208bc7b15e)
-
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b8ab5be9-76ce-441a-a359-86625b177bc1)
 
 
 3 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
@@ -113,6 +113,20 @@ Nesse formato não gera nada de layout
             </intent-filter>
 ```
 
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/0539bf41-8101-4bf1-85c7-c7526e362d31)
+
+
+4 - Add na action as configurações 
+
+
+```kotlin
+        // ATTENTION: This was auto-generated to handle app links.
+        val appLinkIntent: Intent = intent
+        val appLinkAction: String? = appLinkIntent.action
+        val appLinkData: Uri? = appLinkIntent.data
+```
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b790d2bd-59ee-4d66-b52c-4b3eff5847a1)
 
 
 
