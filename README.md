@@ -88,6 +88,17 @@ dependencies {
 
 ``` 
 
+
+2 - Adicionando uma nova `Activity` em `app/java/com.nome.seu-projeto`
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/fc520057-40da-4d19-a9b1-872e2139341a)
+
+Nesse formato não gera nada de layout
+
+![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/64890a1e-5c5c-4351-b793-13208bc7b15e)
+
+
+
 2 - Adicionar o `./app/src/main/AndroidManifest.xml`
 
 ```xml
