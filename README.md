@@ -103,6 +103,15 @@ Nesse formato não gera nada de layout
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/68a9b179-393d-4539-9b75-47e31b470d87)
 
+### Criando o link para o app
+![image](https://github.com/user-attachments/assets/ebe67e51-8e64-47ca-b1f5-8e21237d41de)
+
+### Adicionar url do seu site
+![image](https://github.com/user-attachments/assets/6f6c2eca-d595-49ca-9040-c1b3ebf2fa0c)
+
+### Adicionando url do seu site
+![image](https://github.com/user-attachments/assets/b507ec46-1287-4d3a-946f-fd8d69f98b08)
+
 
 4 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
 
@@ -118,12 +127,30 @@ Nesse formato não gera nada de layout
             </intent-filter>
 ```
 
+```
+Irá criar um intent é um objeto que representa uma "intenção" de realizar uma ação. 
+Ele é usado para comunicações entre diferentes partes de um aplicativo ou até entre
+aplicativos diferentes. Quando você configura um intent filter no manifesto do aplicativo, você está informando
+ao sistema que sua atividade pode lidar com certas ações, como abrir uma URL ou lidar com dados específicos.
+```
+
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/0539bf41-8101-4bf1-85c7-c7526e362d31)
 
 
 5 - Add na action as configurações 
 
+```
+Quando o sistema inicia a atividade TWA através de um intent,
+ele passa informações que você pode usar para personalizar o comportamento
+do seu aplicativo. Adicionar lógica para tratar o intent permite que você
+processe esses dados e execute uma ação específica dentro da TWA.
+```
+### Selcionar a Activity que foi criada nesse caso tem a ```UrlActivity```
 
+![image](https://github.com/user-attachments/assets/0707c5a3-3572-4f10-8474-29d630cafc98)
+
+
+### Irá inserir código
 ```kotlin
         // ATTENTION: This was auto-generated to handle app links.
         val appLinkIntent: Intent = intent
@@ -133,6 +160,15 @@ Nesse formato não gera nada de layout
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b790d2bd-59ee-4d66-b52c-4b3eff5847a1)
 
+
+6 - Declarar associação ao site
+
+![image](https://github.com/user-attachments/assets/5adaf6f3-1a8b-448a-81be-f29d7a312ebb)
+
+
+### Criando assetlinks.json
+
+![image](https://github.com/user-attachments/assets/17aeebe8-b16c-42cb-91a8-b39ce5147749)
 
 
 ### Passos para Configuração
