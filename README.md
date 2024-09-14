@@ -103,6 +103,15 @@ Nesse formato não gera nada de layout
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/68a9b179-393d-4539-9b75-47e31b470d87)
 
+### Criando o link para o app
+![image](https://github.com/user-attachments/assets/ebe67e51-8e64-47ca-b1f5-8e21237d41de)
+
+### Adicionar url do seu site
+![image](https://github.com/user-attachments/assets/6f6c2eca-d595-49ca-9040-c1b3ebf2fa0c)
+
+### Adicionando url do seu site
+![image](https://github.com/user-attachments/assets/b507ec46-1287-4d3a-946f-fd8d69f98b08)
+
 
 4 - Irá adicionar o `./app/src/main/AndroidManifest.xml`
 
@@ -122,6 +131,13 @@ Nesse formato não gera nada de layout
 
 
 5 - Add na action as configurações 
+
+```
+Quando o sistema inicia a atividade TWA através de um intent,
+ele passa informações que você pode usar para personalizar o comportamento
+do seu aplicativo. Adicionar lógica para tratar o intent permite que você
+processe esses dados e execute uma ação específica dentro da TWA.
+```
 
 
 ```kotlin
