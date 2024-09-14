@@ -145,8 +145,12 @@ ele passa informações que você pode usar para personalizar o comportamento
 do seu aplicativo. Adicionar lógica para tratar o intent permite que você
 processe esses dados e execute uma ação específica dentro da TWA.
 ```
+### Selcionar a Activity que foi criada nesse caso tem a ```UrlActivity```
+
+![image](https://github.com/user-attachments/assets/0707c5a3-3572-4f10-8474-29d630cafc98)
 
 
+### Irá inserir código
 ```kotlin
         // ATTENTION: This was auto-generated to handle app links.
         val appLinkIntent: Intent = intent
@@ -156,6 +160,15 @@ processe esses dados e execute uma ação específica dentro da TWA.
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b790d2bd-59ee-4d66-b52c-4b3eff5847a1)
 
+
+6 - Declarar associação ao site
+
+![image](https://github.com/user-attachments/assets/5adaf6f3-1a8b-448a-81be-f29d7a312ebb)
+
+
+### Criando assetlinks.json
+
+![image](https://github.com/user-attachments/assets/17aeebe8-b16c-42cb-91a8-b39ce5147749)
 
 
 ### Passos para Configuração
