@@ -127,6 +127,13 @@ Nesse formato não gera nada de layout
             </intent-filter>
 ```
 
+```
+Irá criar um intent é um objeto que representa uma "intenção" de realizar uma ação. 
+Ele é usado para comunicações entre diferentes partes de um aplicativo ou até entre
+aplicativos diferentes. Quando você configura um intent filter no manifesto do aplicativo, você está informando
+ao sistema que sua atividade pode lidar com certas ações, como abrir uma URL ou lidar com dados específicos.
+```
+
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/0539bf41-8101-4bf1-85c7-c7526e362d31)
 
 
