@@ -89,6 +89,60 @@ dependencies {
 
 ``` 
 
+2 - Alterando arquivo `./app/src/main/AndroidManifest.xml` 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testetwa"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TesteTWA"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="31">
+
+        <!-- Atividade principal que gerencia a TWA. -->
+        <activity
+            android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"
+            android:exported="true"> <!-- Define se a atividade pode ser acessada por outros apps (true). -->
+
+            <!-- A sua URL principal do Progressive Web App (PWA). -->
+            <meta-data
+                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+                android:value="https://hml-twa-pwa.vercel.app/" />
+
+            <!-- Intent-filter para adicionar a TWA ao lançador do Android -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Intent-filter para permitir que a TWA lide com intents para seu PWA -->
+            <intent-filter android:autoVerify="true"> <!-- Permite que a TWA lide com intents que verificam URLs do PWA. -->
+                <action android:name="android.intent.action.VIEW" /> <!-- Permite que a TWA visualize URLs. -->
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="hml-twa-pwa.vercel.app" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
+```
+<details>
+  <summary>Adicionando Activity caso queira</summary>
+
 
 2 - Adicionando uma nova `Activity` em `app/java/com.nome.seu-projeto`
 
@@ -97,6 +151,7 @@ dependencies {
 Nesse formato não gera nada de layout
 
 ![image](https://github.com/FranciscoWallison/teste-TWA-pwa/assets/19413241/b8ab5be9-76ce-441a-a359-86625b177bc1)
+</details>
 
 
 3 - App link Assistant
