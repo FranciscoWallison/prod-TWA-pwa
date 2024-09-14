@@ -170,6 +170,11 @@ processe esses dados e execute uma ação específica dentro da TWA.
 
 ![image](https://github.com/user-attachments/assets/17aeebe8-b16c-42cb-91a8-b39ce5147749)
 
+### Se estiver hospedado corretamente ```/.well-known/assetlinks.json```
+
+![image](https://github.com/user-attachments/assets/eb322b10-9566-42f7-82ba-6a80e8492546)
+
+
 
 ### Passos para Configuração
 
@@ -184,8 +189,11 @@ keytool -list -v -keystore <path-to-keystore> -alias <key-alias> -storepass <sto
 
 ````
 keytool -genkeypair -v -keystore chico-coin.keystore -alias chico-coin-alias -keyalg RSA -keysize 2048 -validity 10000
+````
 
+![image](https://github.com/user-attachments/assets/e55ca7b0-574b-478f-b0c8-e61023fdbb4d)
 
+````
 keytool -list -v -keystore chico-coin.keystore -alias chico-coin-alias -storepass 123456789 -keypass 123456789
 
 ````
